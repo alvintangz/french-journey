@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mon Voyage — French Vocab Trainer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">🇫🇷 <span>Mon Voyage</span></div>
+    <nav class="tabs" id="tabs">
+      <button data-tab="learn" class="active">🃏 Learn</button>
+      <button data-tab="test">⌨️ Test</button>
+      <button data-tab="practice">🧩 Practice</button>
+      <button data-tab="read">📚 Read</button>
+      <button data-tab="words">📝 My Words</button>
+    </nav>
+    <button id="settingsBtn" class="icon-btn" title="Audio settings">🔊</button>
+  </header>
+
+  <section class="filters" id="filters">
+    <div class="chips" id="levelChips"></div>
+    <div class="chips" id="statusChips"></div>
+    <label class="shuffle"><input type="checkbox" id="shuffleToggle" checked /> Shuffle</label>
+    <span class="count" id="deckCount"></span>
+  </section>
+
+  <main id="main"></main>
+
+  <dialog id="settingsDlg">
+    <form method="dialog">
+      <h3>Audio settings</h3>
+      <label class="row"><input type="checkbox" id="autoplay" /> Auto-play pronunciation</label>
+      <label class="col">Voice
+        <select id="voiceSel"></select>
+      </label>
+      <label class="col">Speed: <b id="rateLabel"></b>
+        <input type="range" id="rate" min="0.5" max="1.2" step="0.05" />
+      </label>
+      <p class="hint">Voices come from your device/browser. For the best native quality, pick a voice marked <em>Neural</em>, <em>Premium</em>, <em>Enhanced</em> or <em>Google</em> (Chrome/Edge/Safari ship good ones; on iPhone/Mac download an “Enhanced” French voice in Settings → Accessibility → Spoken Content).</p>
+      <div class="row">
+        <button type="button" id="testVoice">▶ Test voice</button>
+        <button value="close" class="primary">Done</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
