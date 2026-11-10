@@ -1,4 +1,4 @@
-/* Mon Voyage — French vocabulary trainer. Plain JS, no build step. Progress lives in localStorage. */
+/* Mot à Mot — French vocabulary trainer. Plain JS, no build step. Progress lives in localStorage. */
 (() => {
   "use strict";
 

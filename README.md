@@ -1,4 +1,4 @@
-# Mon Voyage 🇫🇷 — French vocabulary trainer
+# Mot à Mot 🇫🇷 — pour Youngmi 💙
 
 Open `index.html` in a browser (no build, no server needed). Progress is saved in your browser (localStorage).
 

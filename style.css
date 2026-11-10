@@ -101,3 +101,4 @@ dialog .col{display:flex;flex-direction:column;gap:4px;margin:10px 0}
 dialog select{padding:8px;border-radius:8px;background:var(--bg);border:1px solid var(--line)}
 dialog button{padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:var(--card)}
 dialog button.primary{background:var(--blue);color:#fff;border-color:var(--blue)}
+.brand .for{font-weight:500;font-size:.8rem;color:var(--muted)}
